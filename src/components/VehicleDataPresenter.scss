@@ -1,0 +1,10 @@
+.vehicle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .field {
+      min-width: 340px;
+      font-size: 20px;
+    }
+  }

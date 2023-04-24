@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  color: rgb(255, 255, 255, 0.7);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-color: rgb(46, 43, 43);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 1rem 0;
+  }
+
+  .amount-title {
+    .amount {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .separator {
+    height: 0.5px;
+    width: 300px;
+
+    background-color: rgb(231, 231, 231);
+    margin: 1.5rem 0;
+  }
+}
