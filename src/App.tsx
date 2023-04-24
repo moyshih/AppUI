@@ -1,8 +1,8 @@
+import './App.scss';
 import React, { useState, useEffect } from "react";
+import VehicleDataPresenter from "./components/VehicleDataPresenter";
 import Vehicle from "./common/interfaces/Vehicle";
 import { HubConnectionBuilder, HttpTransportType, LogLevel, HubConnection, HubConnectionState } from "@microsoft/signalr";
-import './App.scss';
-import VehicleDataPresenter from "./components/VehicleDataPresenter";
 
 const App = () => {
   const [lastMotorcycle, setLastMotorcycle] = useState<Vehicle>();
@@ -28,6 +28,7 @@ const App = () => {
 
     return () => {
       carConnection?.stop();
+      motorcycleConnection?.stop();
     };
   }, []);
 
